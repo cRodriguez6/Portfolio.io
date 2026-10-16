@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connor Rodriguez · Game Developer & Software Engineer</title>
+  
+  <meta name="description" content="Portfolio of Connor Rodriguez (cRodriguez6 / CJR1400) — Game Developer specializing in Godot Engine, indie game design, and software engineering. Explore published games and software projects.">
+  <meta name="keywords" content="Connor Rodriguez, Game Developer, Godot Engine, Indie Games, cjr1400, cRodriguez6, Python, Web Developer, Paint The Panda, Five Nights At Julios">
+  <meta name="author" content="Connor Rodriguez">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Connor Rodriguez · Game Developer & Software Engineer">
+  <meta property="og:description" content="Explore published indie games from Itch.io (cjr1400) and software projects on GitHub (cRodriguez6) with interactive Play Mode!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/160680927?v=4">
+  <meta property="og:url" content="https://crodriguez6.github.io">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-logo" id="header-brand-logo">
+        <span class="brand-badge">CR</span>
+        <div>
+          <span>Connor Rodriguez</span>
+          <span class="brand-sub">Game Dev & Software Eng</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="nav-links-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#games" class="nav-link">Indie Games</a></li>
+          <li><a href="#software" class="nav-link">Software & Code</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <!-- <li><a href="#contact" class="nav-link">Contact</a></li> -->
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="https://github.com/cRodriguez6" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-header" id="header-github-btn">
+          <span>GitHub</span> ↗
+        </a>
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- LinkedIn-Style Profile Hero Card -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <article class="linkedin-profile-card">
+          
+          <!-- Top Cover Banner -->
+          <div class="profile-banner">
+            <div class="banner-gradient-overlay"></div>
+          </div>
+
+          <!-- Main Profile Header Content -->
+          <div class="profile-main-content">
+            
+            <!-- Headshot Frame (Avatar overlapping banner) -->
+            <div class="profile-avatar-row">
+              <div class="headshot-frame" id="headshot-frame" title="Click to upload or preview your custom headshot photo">
+                <div class="headshot-img-wrapper">
+                  <img 
+                    src="https://avatars.githubusercontent.com/u/160680927?v=4" 
+                    alt="Connor Rodriguez Headshot" 
+                    class="headshot-img" 
+                    id="headshot-img"
+                    loading="eager"
+                  >
+                  <div class="headshot-overlay-hint" aria-hidden="true">
+                    <span>📷</span>
+                    <span>Change Photo</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Meta Highlights -->
+              <div class="profile-badge-strip">
+                <span class="badge-tag">🎮 Godot Engine</span>
+                <span class="badge-tag">🐍 Python</span>
+                <span class="badge-tag">🌐 Web Architecture</span>
+              </div>
+            </div>
+
+            <!-- Profile Info: Name, Title, Details -->
+            <div class="profile-info-block">
+              <div class="profile-title-row">
+                <h1 class="profile-name">Connor Rodriguez</h1>
+                <span class="profile-verified-badge" title="Verified Creator">✓</span>
+              </div>
+              <p class="profile-headline">
+                Game Developer & Software Engineer | Godot Engine · Python · GDScript · Interactive Web Experiences
+              </p>
+              <div class="profile-meta-line">
+                <span>📍 United States</span>
+                <span class="meta-dot">·</span>
+                <span class="meta-highlight">Remote Available</span>
+                <span class="meta-dot">·</span>
+                <a href="https://github.com/cRodriguez6" target="_blank" rel="noopener noreferrer" class="meta-link">github.com/cRodriguez6</a>
+                <span class="meta-dot">·</span>
+                <a href="https://cjr1400.itch.io" target="_blank" rel="noopener noreferrer" class="meta-link">cjr1400.itch.io</a>
+              </div>
+            </div>
+
+            <!-- "Open to Work" LinkedIn Callout Box -->
+            <div class="open-to-work-card">
+              <div class="otw-header">
+                <span class="otw-title">Open to work</span>
+                <span class="otw-pill">Available</span>
+              </div>
+              <p class="otw-roles">
+                Game Developer, Software Engineer, and Indie Prototyping Collaborations
+              </p>
+            </div>
+
+            <!-- Action Buttons Row (Straight Edge) -->
+            <div class="profile-actions-row">
+              <a href="#games" class="btn btn-primary" id="hero-view-games-btn">
+                <span>Explore Games</span> ↓
+              </a>
+              <a href="https://github.com/cRodriguez6" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="hero-github-link">
+                <span>GitHub Profile</span> ↗
+              </a>
+              <a href="https://cjr1400.itch.io" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="hero-itch-link">
+                <span>Itch.io Games</span> ↗
+              </a>
+            </div>
+
+            <!-- About / Summary Section inside profile card -->
+            <div class="profile-about-block">
+              <h2 class="about-heading">About</h2>
+              <p class="about-text">
+                Welcome to my creative engineering hub! I develop indie games with the Godot Engine, craft Python and web applications, and build responsive, engaging software projects. Explore my playable browser games on Itch.io and open-source code repositories on GitHub.
+              </p>
+              
+              <!-- Quick Stats Grid -->
+              <div class="profile-stats-grid">
+                <div class="stat-box">
+                  <span class="stat-number">7+</span>
+                  <span class="stat-label">Published Games</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-number">4+</span>
+                  <span class="stat-label">GitHub Repos</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-number">Godot 4</span>
+                  <span class="stat-label">Primary Engine</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-number">Python</span>
+                  <span class="stat-label">Software & Logic</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Games Showcase Section (Itch.io) -->
+    <section class="section" id="games">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tag">Itch.io Portfolio</span>
+          <h2 class="section-title">Published Indie Games</h2>
+          <p class="section-description">
+            Playable directly in your browser or downloadable. Built with passion using Godot, custom pixel art, and engaging mechanics.
+          </p>
+        </header>
+
+        <!-- Category Filter Tabs -->
+        <div class="filter-tabs" role="tablist">
+          <button class="filter-btn active" data-filter="all">All Games (7)</button>
+          <button class="filter-btn" data-filter="browser">Play in Browser</button>
+          <button class="filter-btn" data-filter="action">Action</button>
+          <button class="filter-btn" data-filter="simulation">Simulation</button>
+          <button class="filter-btn" data-filter="puzzle">Puzzle</button>
+        </div>
+
+        <!-- Games Grid -->
+        <div class="games-grid" id="games-grid-container">
+
+          <!-- Game 1: Paint The Panda -->
+          <article class="game-card" data-category="browser educational puzzle">
+            <div class="game-cover-wrap">
+              <img src="https://img.itch.zone/aW1nLzI3MjUyMTExLnBuZw==/315x250%23c/kSq0G3.png" alt="Paint The Panda cover art" class="game-cover-img" loading="lazy">
+              <span class="game-genre-badge">Educational</span>
+              <span class="game-platform-badge">● Play in Browser</span>
+            </div>
+            <div class="game-card-body">
+              <h3 class="game-card-title">Paint The Panda</h3>
+              <p class="game-card-desc">
+                A colorful pixel painting game designed to encourage creativity! Players paint canvas tiles to reveal cute panda artwork with dynamic color palettes.
+              </p>
+              <div class="game-tech-tags">
+                <span class="game-tech-tag">Godot</span>
+                <span class="game-tech-tag">Pixel Art</span>
+                <span class="game-tech-tag">HTML5 Export</span>
+              </div>
+              <div class="game-card-actions">
+                <a href="https://cjr1400.itch.io/paint-the-panda" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Play on Itch</span> ↗
+                </a>
+                <button class="btn btn-secondary btn-sm preview-game-btn" data-itch-url="https://cjr1400.itch.io/paint-the-panda" data-game-title="Paint The Panda">
+                  Quick View
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Game 2: Beware The Space Octopus -->
+          <article class="game-card" data-category="browser action">
+            <div class="game-cover-wrap">
+              <img src="https://img.itch.zone/aW1nLzI3MjQ4MjIwLnBuZw==/315x250%23c/23K0Ae.png" alt="Beware The Space Octopus cover art" class="game-cover-img" loading="lazy">
+              <span class="game-genre-badge">Action</span>
+              <span class="game-platform-badge">● Play in Browser</span>
+            </div>
+            <div class="game-card-body">
+              <h3 class="game-card-title">Beware The Space Octopus</h3>
+              <p class="game-card-desc">
+                High-tension space arcade action! Navigate cosmic hazards and evade the grasp of an ancient space beast lurking in the asteroid belt.
+              </p>
+              <div class="game-tech-tags">
+                <span class="game-tech-tag">Godot 2D</span>
+                <span class="game-tech-tag">Arcade Physics</span>
+                <span class="game-tech-tag">Sci-Fi</span>
+              </div>
+              <div class="game-card-actions">
+                <a href="https://cjr1400.itch.io/beware-of-the" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Play on Itch</span> ↗
+                </a>
+                <button class="btn btn-secondary btn-sm preview-game-btn" data-itch-url="https://cjr1400.itch.io/beware-of-the" data-game-title="Beware The Space Octopus">
+                  Quick View
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Game 3: Five Nights At Julio's -->
+          <article class="game-card" data-category="browser interactive fiction">
+            <div class="game-cover-wrap">
+              <img src="https://img.itch.zone/aW1nLzI3MjMwMjk3LnBuZw==/315x250%23c/Fns9PT.png" alt="Five Nights At Julio's cover art" class="game-cover-img" loading="lazy">
+              <span class="game-genre-badge">Interactive Fiction</span>
+              <span class="game-platform-badge">● Play in Browser</span>
+            </div>
+            <div class="game-card-body">
+              <h3 class="game-card-title">Five Nights At Julio's</h3>
+              <p class="game-card-desc">
+                "Can you survive at Julio's?" A narrative-driven survival experience blending atmospheric suspense, tense camera management, and branch choices.
+              </p>
+              <div class="game-tech-tags">
+                <span class="game-tech-tag">Narrative Design</span>
+                <span class="game-tech-tag">Audio Atmosphere</span>
+                <span class="game-tech-tag">Survival</span>
+              </div>
+              <div class="game-card-actions">
+                <a href="https://cjr1400.itch.io/five-nights-at-julios" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Play on Itch</span> ↗
+                </a>
+                <button class="btn btn-secondary btn-sm preview-game-btn" data-itch-url="https://cjr1400.itch.io/five-nights-at-julios" data-game-title="Five Nights At Julio's">
+                  Quick View
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Game 4: Isaiah's Diner -->
+          <article class="game-card" data-category="browser simulation">
+            <div class="game-cover-wrap">
+              <img src="https://img.itch.zone/aW1nLzI3MTc4MjE3LnBuZw==/315x250%23c/U2rj9l.png" alt="Isaiah's Diner cover art" class="game-cover-img" loading="lazy">
+              <span class="game-genre-badge">Simulation</span>
+              <span class="game-platform-badge">● Play in Browser</span>
+            </div>
+            <div class="game-card-body">
+              <h3 class="game-card-title">Isaiah's Diner</h3>
+              <p class="game-card-desc">
+                A Not-so-Vegan Vegan Burger cooking simulator! Manage hungry customer orders, grill patties, assemble quirky ingredients, and balance customer patience.
+              </p>
+              <div class="game-tech-tags">
+                <span class="game-tech-tag">Management Sim</span>
+                <span class="game-tech-tag">Timing Mechanics</span>
+                <span class="game-tech-tag">Godot</span>
+              </div>
+              <div class="game-card-actions">
+                <a href="https://cjr1400.itch.io/isaiahs-diner" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Play on Itch</span> ↗
+                </a>
+                <button class="btn btn-secondary btn-sm preview-game-btn" data-itch-url="https://cjr1400.itch.io/isaiahs-diner" data-game-title="Isaiah's Diner">
+                  Quick View
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Game 5: Stop the evil Josh -->
+          <article class="game-card" data-category="browser action">
+            <div class="game-cover-wrap">
+              <img src="https://img.itch.zone/aW1nLzI3MTY4MTM2LnBuZw==/315x250%23c/twzmp8.png" alt="Stop the evil Josh cover art" class="game-cover-img" loading="lazy">
+              <span class="game-genre-badge">Action / Boss Duel</span>
+              <span class="game-platform-badge">● Play in Browser</span>
+            </div>
+            <div class="game-card-body">
+              <h3 class="game-card-title">Stop the evil Josh</h3>
+              <p class="game-card-desc">
+                Fast-paced retro boss encounter pitting players against rogue mechanics in an intense duel. Master evasion and precise timing to defeat the adversary.
+              </p>
+              <div class="game-tech-tags">
+                <span class="game-tech-tag">Game Jam</span>
+                <span class="game-tech-tag">Boss Fight</span>
+                <span class="game-tech-tag">Action</span>
+              </div>
+              <div class="game-card-actions">
+                <a href="https://cjr1400.itch.io/stop-the-evil-josh" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Play on Itch</span> ↗
+                </a>
+                <button class="btn btn-secondary btn-sm preview-game-btn" data-itch-url="https://cjr1400.itch.io/stop-the-evil-josh" data-game-title="Stop the evil Josh">
+                  Quick View
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Game 6: Race Car Sweeper -->
+          <article class="game-card" data-category="browser puzzle">
+            <div class="game-cover-wrap">
+              <img src="https://img.itch.zone/aW1nLzI3MTQyNTY5LnBuZw==/315x250%23c/1V6qUk.png" alt="Race Car Sweeper cover art" class="game-cover-img" loading="lazy">
+              <span class="game-genre-badge">Puzzle Hybrid</span>
+              <span class="game-platform-badge">● Play in Browser</span>
+            </div>
+            <div class="game-card-body">
+              <h3 class="game-card-title">Race Car Sweeper</h3>
+              <p class="game-card-desc">
+                A clever fusion of high-speed racing and classic minesweeper deduction. Clear the track and calculate safe grid movements before hitting hidden hazards.
+              </p>
+              <div class="game-tech-tags">
+                <span class="game-tech-tag">Puzzle Hybrid</span>
+                <span class="game-tech-tag">Grid Logic</span>
+                <span class="game-tech-tag">Godot</span>
+              </div>
+              <div class="game-card-actions">
+                <a href="https://cjr1400.itch.io/race-car-sweeper" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Play on Itch</span> ↗
+                </a>
+                <button class="btn btn-secondary btn-sm preview-game-btn" data-itch-url="https://cjr1400.itch.io/race-car-sweeper" data-game-title="Race Car Sweeper">
+                  Quick View
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Game 7: Iceberg Commander -->
+          <article class="game-card" data-category="browser action simulation">
+            <div class="game-cover-wrap">
+              <img src="https://img.itch.zone/aW1nLzI2MDI1NzE5LnBuZw==/315x250%23c/d%2BvjmD.png" alt="Iceberg Commander cover art" class="game-cover-img" loading="lazy">
+              <span class="game-genre-badge">Strategy</span>
+              <span class="game-platform-badge">● Play in Browser</span>
+            </div>
+            <div class="game-card-body">
+              <h3 class="game-card-title">Iceberg Commander</h3>
+              <p class="game-card-desc">
+                Take the helm in freezing polar waters! Steer through treacherous ice fields, command rescue maneuvers, and navigate harsh Arctic weather.
+              </p>
+              <div class="game-tech-tags">
+                <span class="game-tech-tag">Naval Navigation</span>
+                <span class="game-tech-tag">Dynamic Water</span>
+                <span class="game-tech-tag">Strategy</span>
+              </div>
+              <div class="game-card-actions">
+                <a href="https://cjr1400.itch.io/iceberg-commander" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <span>Play on Itch</span> ↗
+                </a>
+                <button class="btn btn-secondary btn-sm preview-game-btn" data-itch-url="https://cjr1400.itch.io/iceberg-commander" data-game-title="Iceberg Commander">
+                  Quick View
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Software Engineering & GitHub Repos Section -->
+    <section class="section" id="software">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">GitHub Repositories</span>
+          <h2 class="section-title">Software & Data Engineering</h2>
+          <p class="section-description">
+            Open-source repositories, data science investigations, and web architecture from my GitHub account (@cRodriguez6).
+          </p>
+        </header>
+
+        <div class="repos-grid">
+
+          <!-- Repo 1: crodriguez6.github.io-final-project -->
+          <article class="repo-card">
+            <div class="repo-card-top">
+              <span class="repo-folder-icon">📂</span>
+              <div class="repo-links-icons">
+                <a href="https://github.com/cRodriguez6/crodriguez6.github.io-final-project" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="View Source on GitHub">↗</a>
+              </div>
+            </div>
+            <h3 class="repo-card-title">
+              <a href="https://github.com/cRodriguez6/crodriguez6.github.io-final-project" target="_blank" rel="noopener noreferrer">
+                crodriguez6.github.io-final-project
+              </a>
+            </h3>
+            <p class="repo-card-desc">
+              Web development capstone project featuring custom responsive layout design, accessible semantic HTML5 architecture, interactive scripts, and hosted on GitHub Pages.
+            </p>
+            <div class="repo-meta">
+              <span class="repo-lang">
+                <span class="lang-color-dot lang-html"></span>
+                HTML / CSS / JS
+              </span>
+              <span>GitHub Pages</span>
+            </div>
+          </article>
+
+          <!-- Repo 2: Intro-To-Data-Science-Final-Project -->
+          <article class="repo-card">
+            <div class="repo-card-top">
+              <span class="repo-folder-icon">📊</span>
+              <div class="repo-links-icons">
+                <a href="https://github.com/cRodriguez6/Intro-To-Data-Science-Final-Project" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="View Source on GitHub">↗</a>
+              </div>
+            </div>
+            <h3 class="repo-card-title">
+              <a href="https://github.com/cRodriguez6/Intro-To-Data-Science-Final-Project" target="_blank" rel="noopener noreferrer">
+                Intro-To-Data-Science-Final-Project
+              </a>
+            </h3>
+            <p class="repo-card-desc">
+              Comprehensive data science research project leveraging Python for exploratory data analysis (EDA), statistical modeling, data cleaning, and insightful data visualization.
+            </p>
+            <div class="repo-meta">
+              <span class="repo-lang">
+                <span class="lang-color-dot lang-python"></span>
+                Python / Jupyter
+              </span>
+              <span>Data Analysis</span>
+            </div>
+          </article>
+
+          <!-- Repo 3: Portfolio.io -->
+          <article class="repo-card">
+            <div class="repo-card-top">
+              <span class="repo-folder-icon">🌐</span>
+              <div class="repo-links-icons">
+                <a href="https://github.com/cRodriguez6/Portfolio.io" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="View Source on GitHub">↗</a>
+              </div>
+            </div>
+            <h3 class="repo-card-title">
+              <a href="https://github.com/cRodriguez6/Portfolio.io" target="_blank" rel="noopener noreferrer">
+                Portfolio.io
+              </a>
+            </h3>
+            <p class="repo-card-desc">
+              Personal portfolio system and creative playground exploring component layout systems, asset pipeline management, and project showcases.
+            </p>
+            <div class="repo-meta">
+              <span class="repo-lang">
+                <span class="lang-color-dot lang-js"></span>
+                JavaScript / Web
+              </span>
+              <span>Portfolio Hub</span>
+            </div>
+          </article>
+
+          <!-- Repo 4: codespaces-blank -->
+          <article class="repo-card">
+            <div class="repo-card-top">
+              <span class="repo-folder-icon">⚡</span>
+              <div class="repo-links-icons">
+                <a href="https://github.com/cRodriguez6/codespaces-blank" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="View Source on GitHub">↗</a>
+              </div>
+            </div>
+            <h3 class="repo-card-title">
+              <a href="https://github.com/cRodriguez6/codespaces-blank" target="_blank" rel="noopener noreferrer">
+                codespaces-blank
+              </a>
+            </h3>
+            <p class="repo-card-desc">
+              Cloud development environment configuration and sandbox workspace for rapid prototyping in Python, testing dependencies, and automated dev containers.
+            </p>
+            <div class="repo-meta">
+              <span class="repo-lang">
+                <span class="lang-color-dot lang-python"></span>
+                Python / Containers
+              </span>
+              <span>Dev Environment</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Matrix Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">Technical Expertise</h2>
+          <p class="section-description">
+            A blend of creative game engine development, procedural logic, and modern programming languages.
+          </p>
+        </header>
+
+        <div class="skills-container">
+
+          <!-- Card 1: Game Development -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">🎮</div>
+              <h3 class="skill-card-title">Game Development</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-item-name">Godot Engine (2D & 3D)</span>
+                  <span class="skill-item-level">Advanced</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-item-name">GDScript & Architecture</span>
+                  <span class="skill-item-level">Proficient</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-item-name">Game Loop & Physics</span>
+                  <span class="skill-item-level">Proficient</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-item-name">Game Jam Prototyping</span>
+                  <span class="skill-item-level">Expert</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Programming Languages -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">💻</div>
+              <h3 class="skill-card-title">Languages & Logic</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-item-name">Python</span>
+                  <span class="skill-item-level">Proficient</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-item-name">JavaScript (ES6+)</span>
+                  <span class="skill-item-level">Proficient</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-item-name">HTML5 & Modern CSS3</span>
+                  <span class="skill-item-level">Advanced</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-item-name">Git & GitHub Workflows</span>
+                  <span class="skill-item-level">Proficient</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 82%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Data & Design -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">🎨</div>
+              <h3 class="skill-card-title">Data & Creative</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-item-name">Data Science & Analysis</span>
+                  <span class="skill-item-level">Proficient</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 78%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-item-name">Pixel Art & Visual Assets</span>
+                  <span class="skill-item-level">Creative</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 82%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-item-name">Level & Sound Design</span>
+                  <span class="skill-item-level">Intermediate</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 75%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info">
+                  <span class="skill-item-name">WebGL & Browser Exporting</span>
+                  <span class="skill-item-level">Advanced</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         CONTACT & CONNECT SECTION (TEMPORARILY DISABLED)
+         Uncomment this block and the nav link when ready to restore.
+    ============================================================== -->
+    <!--
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-description">
+            Interested in collaborating on game jams, software projects, or discussing game development? Reach out anytime!
+          </p>
+        </header>
+
+        <div class="contact-grid">
+          
+          <div class="contact-info-card">
+            <div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.4rem; margin-bottom: 12px;">Connor Rodriguez</h3>
+              <p style="color: var(--text-muted); line-height: 1.6;">
+                Currently available for game design collaborations, indie development projects, and software engineering opportunities.
+              </p>
+
+              <div class="contact-links-list">
+                <a href="https://github.com/cRodriguez6" target="_blank" rel="noopener noreferrer" class="contact-item">
+                  <div class="contact-item-icon">💻</div>
+                  <div>
+                    <strong>GitHub Profile</strong>
+                    <div style="font-size: 0.8rem; color: var(--text-dim);">github.com/cRodriguez6</div>
+                  </div>
+                </a>
+
+                <a href="https://cjr1400.itch.io" target="_blank" rel="noopener noreferrer" class="contact-item">
+                  <div class="contact-item-icon">🕹️</div>
+                  <div>
+                    <strong>Itch.io Games Store</strong>
+                    <div style="font-size: 0.8rem; color: var(--text-dim);">cjr1400.itch.io</div>
+                  </div>
+                </a>
+
+                <div class="contact-item">
+                  <div class="contact-item-icon">📍</div>
+                  <div>
+                    <strong>Location</strong>
+                    <div style="font-size: 0.8rem; color: var(--text-dim);">United States · Open to Remote</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <h3 style="font-family: var(--font-heading); font-size: 1.3rem;">Send a Message</h3>
+            
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Hunter" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="alex@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message or Project Inquiry</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Hello Connor, I saw your games on itch.io and wanted to reach out regarding..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="send-message-btn">
+              <span>Send Message</span>
+              <span>→</span>
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+    -->
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Connor Rodriguez</strong> · Game Developer & Software Engineer
+      </div>
+      <div class="footer-links">
+        <a href="#hero" class="footer-link">Back to Top</a>
+        <a href="https://github.com/cRodriguez6" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub (cRodriguez6)</a>
+        <a href="https://cjr1400.itch.io" target="_blank" rel="noopener noreferrer" class="footer-link">Itch.io (CJR1400)</a>
+      </div>
+      <div>
+        Built with HTML5, CSS3, & Godot Engine Integration · &copy; 2026 Connor Rodriguez
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================= -->
+  <!-- HEADSHOT PHOTO MANAGER MODAL                              -->
+  <!-- ========================================================= -->
+  <div class="modal-backdrop" id="headshot-modal" role="dialog" aria-modal="true" aria-labelledby="headshot-modal-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title" id="headshot-modal-title">📷 Customize Your Headshot</h3>
+        <button class="modal-close-btn" id="close-headshot-modal" aria-label="Close modal">×</button>
+      </div>
+
+      <p class="modal-description">
+        Upload or drop your professional headshot photo here to instantly preview it on your portfolio! The picture will automatically be saved and displayed.
+      </p>
+
+      <div class="drop-zone" id="headshot-drop-zone">
+        <div class="drop-zone-icon">📁</div>
+        <div class="drop-zone-hint"><strong>Click to browse</strong> or drag & drop photo here</div>
+        <div class="drop-zone-sub">Supports PNG, JPG, WEBP (Square or portrait ratio recommended)</div>
+        <input type="file" id="headshot-file-input" accept="image/*" style="display: none;">
+      </div>
+
+      <div style="display: flex; gap: 10px; justify-content: flex-end; margin-top: 16px;">
+        <button class="btn btn-secondary btn-sm" id="reset-headshot-btn">Reset to GitHub Avatar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- ITCH GAME EMBED LIGHTBOX MODAL                            -->
+  <!-- ========================================================= -->
+  <div class="modal-backdrop" id="game-preview-modal" role="dialog" aria-modal="true" aria-labelledby="preview-modal-title">
+    <div class="modal-box" style="max-width: 960px; padding: 18px;">
+      <div class="modal-header" style="margin-bottom: 12px;">
+        <h3 class="modal-title" id="preview-modal-title">Game Preview</h3>
+        <button class="modal-close-btn" id="close-game-preview" aria-label="Close modal">×</button>
+      </div>
+      <div class="game-modal-frame">
+        <iframe id="game-preview-iframe" src="about:blank" allow="autoplay; fullscreen; gamepad"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

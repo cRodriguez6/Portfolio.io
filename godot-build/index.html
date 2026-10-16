@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Godot Portfolio Showcase - Connor Rodriguez</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #1a1e29;
+      color: #e2e8f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-image: 
+        radial-gradient(circle at 50% 30%, rgba(71, 140, 191, 0.2) 0%, transparent 60%),
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 32px 32px, 32px 32px;
+    }
+    .godot-container {
+      background: #11141d;
+      border: 2px solid #478cbf;
+      box-shadow: 0 0 35px rgba(71, 140, 191, 0.4);
+      border-radius: 16px;
+      padding: 40px;
+      text-align: center;
+      max-width: 680px;
+      width: 90%;
+    }
+    .godot-logo {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 16px;
+      filter: drop-shadow(0 0 12px #478cbf);
+    }
+    h1 {
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    p {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .drop-hint {
+      background: rgba(71, 140, 191, 0.1);
+      border: 1px dashed #478cbf;
+      padding: 16px;
+      border-radius: 10px;
+      font-family: monospace;
+      font-size: 0.85rem;
+      color: #7dd3fc;
+      margin-bottom: 24px;
+      text-align: left;
+    }
+    .badge-bar {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .badge {
+      background: #1e293b;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      color: #38bdf8;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="godot-container">
+    <svg class="godot-logo" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 28C12 20 20 12 32 12C44 12 52 20 52 28V36C52 44 44 52 32 52C20 52 12 44 12 36V28Z" fill="#478CBF"/>
+      <circle cx="24" cy="30" r="4" fill="white"/>
+      <circle cx="40" cy="30" r="4" fill="white"/>
+      <circle cx="24" cy="30" r="2" fill="#111827"/>
+      <circle cx="40" cy="30" r="2" fill="#111827"/>
+      <path d="M26 42H38" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+    <h1>Godot HTML5 Engine Port Ready</h1>
+    <p>This frame is pre-configured to host Connor's Godot portfolio game! When you export your project in Godot via <strong>Project &rarr; Export &rarr; Web (HTML5)</strong>, place the exported files into this folder.</p>
+    
+    <div class="drop-hint">
+      📁 <strong>Export Path:</strong><br>
+      <code>/scratch/portfolio/godot-build/index.html</code><br>
+      <code>/scratch/portfolio/godot-build/index.pck</code><br>
+      <code>/scratch/portfolio/godot-build/index.wasm</code>
+    </div>
+
+    <div class="badge-bar">
+      <span class="badge">Godot 4.x / 3.x Compatible</span>
+      <span class="badge">WebGL2 & WebAssembly</span>
+      <span class="badge">Gamepad & Keyboard Ready</span>
+    </div>
+  </div>
+</body>
+</html>
