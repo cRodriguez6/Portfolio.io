@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Connor Rodriguez · Game Developer & Software Engineer</title>
   
-  <meta name="description" content="Portfolio of Connor Rodriguez (cRodriguez6 / CJR1400) — Game Developer specializing in Godot Engine, indie game design, and software engineering. Explore published games and software projects.">
-  <meta name="keywords" content="Connor Rodriguez, Game Developer, Godot Engine, Indie Games, cjr1400, cRodriguez6, Python, Web Developer, Paint The Panda, Five Nights At Julios">
+  <meta name="description" content="Portfolio of Connor Rodriguez (cRodriguez6 / CJR1400) — Game Developer specializing in Godot Engine, 3D Voxel Engine, indie game design, and software engineering. Explore published games and software projects.">
+  <meta name="keywords" content="Connor Rodriguez, Game Developer, Godot Engine, Indie Games, Voxel Engine, Pygame, PyCharm, cjr1400, cRodriguez6, Python, Web Developer, Paint The Panda, Five Nights At Julios">
   <meta name="author" content="Connor Rodriguez">
 
   <!-- Open Graph / Social Media -->
   <meta property="og:title" content="Connor Rodriguez · Game Developer & Software Engineer">
-  <meta property="og:description" content="Explore published indie games from Itch.io (cjr1400) and software projects on GitHub (cRodriguez6) with interactive Play Mode!">
+  <meta property="og:description" content="Explore published indie games from Itch.io (cjr1400), a custom 3D Voxel Engine, and software projects on GitHub (cRodriguez6)!">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/160680927?v=4">
   <meta property="og:url" content="https://crodriguez6.github.io">
@@ -40,6 +40,7 @@
         <ul class="nav-links" id="nav-links-menu">
           <li><a href="#hero" class="nav-link active">Home</a></li>
           <li><a href="#games" class="nav-link">Indie Games</a></li>
+          <li><a href="#voxel-engine" class="nav-link">Voxel Engine</a></li>
           <li><a href="#software" class="nav-link">Software & Code</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <!-- <li><a href="#contact" class="nav-link">Contact</a></li> -->
@@ -93,7 +94,8 @@
               <!-- Quick Meta Highlights -->
               <div class="profile-badge-strip">
                 <span class="badge-tag">🎮 Godot Engine</span>
-                <span class="badge-tag">🐍 Python</span>
+                <span class="badge-tag">🧊 3D Voxel Engine</span>
+                <span class="badge-tag">🐍 Python & Pygame</span>
                 <span class="badge-tag">🌐 Web Architecture</span>
               </div>
             </div>
@@ -156,7 +158,7 @@
                   <span class="stat-label">Published Games</span>
                 </div>
                 <div class="stat-box">
-                  <span class="stat-number">4+</span>
+                  <span class="stat-number">5+</span>
                   <span class="stat-label">GitHub Repos</span>
                 </div>
                 <div class="stat-box">
@@ -164,8 +166,8 @@
                   <span class="stat-label">Primary Engine</span>
                 </div>
                 <div class="stat-box">
-                  <span class="stat-number">Python</span>
-                  <span class="stat-label">Software & Logic</span>
+                  <span class="stat-number">Python & Pygame</span>
+                  <span class="stat-label">3D Engine & Logic</span>
                 </div>
               </div>
             </div>
@@ -399,6 +401,116 @@
       </div>
     </section>
 
+    <!-- Voxel Engine Showcase Section -->
+    <section class="section" id="voxel-engine">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Featured 3D Engine Project</span>
+          <h2 class="section-title">Voxel Engine</h2>
+          <p class="section-description">
+            A real-time procedural 3D voxel terrain engine built from scratch in Python, featuring multi-tiered elevation rendering and high framerate performance.
+          </p>
+        </header>
+
+        <article class="voxel-showcase-card">
+          <!-- Left Column: Window Mockup with Screenshot -->
+          <div class="voxel-media-col">
+            <div class="voxel-window-header">
+              <div class="voxel-window-dots">
+                <span class="voxel-window-dot dot-red"></span>
+                <span class="voxel-window-dot dot-yellow"></span>
+                <span class="voxel-window-dot dot-green"></span>
+              </div>
+              <span class="voxel-window-title">Voxel Engine 3D Viewport</span>
+              <span class="voxel-fps-pill">118 FPS</span>
+            </div>
+            
+            <div class="voxel-img-container">
+              <img 
+                src="assets/voxel-engine.png" 
+                alt="3D Voxel Engine procedural terrain generation screenshot" 
+                class="voxel-screenshot"
+                loading="lazy"
+                id="voxel-engine-img"
+              >
+            </div>
+
+            <div class="voxel-media-caption">
+              <span>● Procedural Multi-Tier Elevation</span>
+              <span>Pygame + PyOpenGL</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Content, Description, Tutorial Credit & Links -->
+          <div class="voxel-content-col">
+            <div class="voxel-badge-row">
+              <span class="voxel-badge voxel-badge-py">🐍 Python</span>
+              <span class="voxel-badge">🕹️ Pygame</span>
+              <span class="voxel-badge">💻 PyCharm IDE</span>
+              <span class="voxel-badge">🧊 3D Voxel Meshing</span>
+            </div>
+
+            <h3 class="voxel-title">Procedural 3D Voxel Engine</h3>
+
+            <div class="voxel-desc">
+              <p>
+                This 3D Voxel Engine was developed in <strong>PyCharm</strong> using <strong>Pygame</strong> and Python. It procedurally synthesizes vast voxel landscapes with colorful, multi-layered elevation contours, dynamic camera navigation, and real-time mesh rendering.
+              </p>
+              <p>
+                To create this engine, I followed the comprehensive YouTube tutorial 
+                <a href="https://www.youtube.com/watch?v=Ab8TOSFfNp4&t=2690s" target="_blank" rel="noopener noreferrer" style="color: var(--accent-blue); font-weight: 600; text-decoration: underline;">
+                  "Creating a Voxel Engine (like Minecraft) from Scratch in Python"
+                </a> 
+                by Coder Space, learning the core mathematics behind procedural heightmaps, voxel chunk structures, and high-performance graphics loops.
+              </p>
+            </div>
+
+            <!-- YouTube Tutorial Attribution Box -->
+            <div class="voxel-tutorial-callout">
+              <div class="voxel-tutorial-icon">▶</div>
+              <div class="voxel-tutorial-content">
+                <strong>YouTube Tutorial Followed:</strong>
+                <br>
+                <a href="https://www.youtube.com/watch?v=Ab8TOSFfNp4&t=2690s" target="_blank" rel="noopener noreferrer" class="voxel-tutorial-link">
+                  "Creating a Voxel Engine (like Minecraft) from Scratch in Python" (Coder Space) ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Technical Highlights Grid -->
+            <div class="voxel-highlights-grid">
+              <div class="voxel-highlight-card">
+                <span class="voxel-highlight-label">Development IDE</span>
+                <span class="voxel-highlight-val">JetBrains PyCharm</span>
+              </div>
+              <div class="voxel-highlight-card">
+                <span class="voxel-highlight-label">Graphics & Window</span>
+                <span class="voxel-highlight-val">Pygame Framework</span>
+              </div>
+              <div class="voxel-highlight-card">
+                <span class="voxel-highlight-label">Terrain Synthesis</span>
+                <span class="voxel-highlight-val">Procedural Strata Heightmaps</span>
+              </div>
+              <div class="voxel-highlight-card">
+                <span class="voxel-highlight-label">Performance Target</span>
+                <span class="voxel-highlight-val">High Frame Rate (100+ FPS)</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="voxel-actions">
+              <a href="https://github.com/cRodriguez6/Voxel-Engine" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="voxel-github-btn">
+                <span>View on GitHub</span> ↗
+              </a>
+              <a href="https://www.youtube.com/watch?v=Ab8TOSFfNp4&t=2690s" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="voxel-youtube-btn">
+                <span>Watch Tutorial</span> ↗
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <!-- Software Engineering & GitHub Repos Section -->
     <section class="section" id="software">
       <div class="container">
@@ -411,6 +523,31 @@
         </header>
 
         <div class="repos-grid">
+
+          <!-- Repo: Voxel-Engine -->
+          <article class="repo-card">
+            <div class="repo-card-top">
+              <span class="repo-folder-icon">🧊</span>
+              <div class="repo-links-icons">
+                <a href="https://github.com/cRodriguez6/Voxel-Engine" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="View Source on GitHub">↗</a>
+              </div>
+            </div>
+            <h3 class="repo-card-title">
+              <a href="https://github.com/cRodriguez6/Voxel-Engine" target="_blank" rel="noopener noreferrer">
+                Voxel-Engine
+              </a>
+            </h3>
+            <p class="repo-card-desc">
+              3D Voxel Engine developed in PyCharm using Pygame and Python. Features procedural terrain generation with layered elevation strata, built following Coder Space's YouTube tutorial.
+            </p>
+            <div class="repo-meta">
+              <span class="repo-lang">
+                <span class="lang-color-dot lang-python"></span>
+                Python / Pygame
+              </span>
+              <a href="#voxel-engine" style="font-size: 0.78rem; color: var(--accent-blue); text-decoration: none; font-weight: 600;">View Showcase ↓</a>
+            </div>
+          </article>
 
           <!-- Repo 1: crodriguez6.github.io-final-project -->
           <article class="repo-card">
@@ -739,6 +876,7 @@
       </div>
       <div class="footer-links">
         <a href="#hero" class="footer-link">Back to Top</a>
+        <a href="#voxel-engine" class="footer-link">Voxel Engine</a>
         <a href="https://github.com/cRodriguez6" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub (cRodriguez6)</a>
         <a href="https://cjr1400.itch.io" target="_blank" rel="noopener noreferrer" class="footer-link">Itch.io (CJR1400)</a>
       </div>
