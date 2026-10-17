@@ -103,7 +103,7 @@ function initHeadshotManager() {
   const dropZone = document.getElementById('headshot-drop-zone');
   const resetBtn = document.getElementById('reset-headshot-btn');
 
-  const DEFAULT_AVATAR = 'https://avatars.githubusercontent.com/u/160680927?v=4';
+  const DEFAULT_AVATAR = 'assets/headshot.jpg';
 
   // Check saved headshot from LocalStorage
   const savedHeadshot = localStorage.getItem('cRodriguez_headshot');
@@ -190,7 +190,7 @@ function initHeadshotManager() {
     });
   }
 
-  // Reset to default GitHub avatar
+  // Reset to default headshot
   if (resetBtn) {
     resetBtn.addEventListener('click', () => {
       localStorage.removeItem('cRodriguez_headshot');
@@ -200,7 +200,7 @@ function initHeadshotManager() {
       if (headshotModal) {
         headshotModal.classList.remove('active');
       }
-      showToast('Reset to default GitHub avatar.');
+      showToast('Reset to default headshot.');
     });
   }
 }
