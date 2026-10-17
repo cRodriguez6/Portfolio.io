@@ -41,6 +41,7 @@
           <li><a href="#hero" class="nav-link active">Home</a></li>
           <li><a href="#games" class="nav-link">Indie Games</a></li>
           <li><a href="#voxel-engine" class="nav-link">Voxel Engine</a></li>
+          <li><a href="#batman-rag" class="nav-link">Batman RAG</a></li>
           <li><a href="#software" class="nav-link">Software & Code</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <!-- <li><a href="#contact" class="nav-link">Contact</a></li> -->
@@ -91,9 +92,9 @@
               <!-- Quick Meta Highlights -->
               <div class="profile-badge-strip">
                 <span class="badge-tag">🎮 Godot Engine</span>
+                <span class="badge-tag">🦇 Batman RAG AI</span>
                 <span class="badge-tag">🧊 3D Voxel Engine</span>
-                <span class="badge-tag">🐍 Python & Pygame</span>
-                <span class="badge-tag">🌐 Web Architecture</span>
+                <span class="badge-tag">☁️ Azure & Docker</span>
               </div>
             </div>
 
@@ -155,7 +156,7 @@
                   <span class="stat-label">Published Games</span>
                 </div>
                 <div class="stat-box">
-                  <span class="stat-number">5+</span>
+                  <span class="stat-number">7+</span>
                   <span class="stat-label">GitHub Repos</span>
                 </div>
                 <div class="stat-box">
@@ -163,8 +164,8 @@
                   <span class="stat-label">Primary Engine</span>
                 </div>
                 <div class="stat-box">
-                  <span class="stat-number">Python & Pygame</span>
-                  <span class="stat-label">3D Engine & Logic</span>
+                  <span class="stat-number">Azure & AI</span>
+                  <span class="stat-label">RAG & Vector Search</span>
                 </div>
               </div>
             </div>
@@ -508,6 +509,112 @@
       </div>
     </section>
 
+    <!-- Batman RAG Model Showcase Section -->
+    <section class="section" id="batman-rag">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Featured AI & Cloud Project</span>
+          <h2 class="section-title">Batman RAG AI Chatbot</h2>
+          <p class="section-description">
+            A containerized Retrieval-Augmented Generation (RAG) assistant querying live knowledge from the Batman Fandom Wiki, powered by Azure Cosmos DB Vector Search and Azure OpenAI.
+          </p>
+        </header>
+
+        <article class="voxel-showcase-card">
+          <!-- Left Column: Video Mockup with Playable Screen Recording -->
+          <div class="voxel-media-col">
+            <div class="voxel-window-header" style="background: #111115; border-bottom: 1px solid #222226;">
+              <div class="voxel-window-dots">
+                <span class="voxel-window-dot dot-red"></span>
+                <span class="voxel-window-dot dot-yellow"></span>
+                <span class="voxel-window-dot dot-green"></span>
+              </div>
+              <span class="voxel-window-title" style="color: #f5c518; font-weight: 600;">🦇 Batman Chatbot — Gradio UI</span>
+              <span class="voxel-fps-pill" style="color: #f5c518;">Docker ● Active</span>
+            </div>
+            
+            <div class="batman-video-container">
+              <video controls playsinline preload="metadata" class="batman-video-player" id="batman-demo-video">
+                <source src="assets/batman-rag-demo.mp4" type="video/mp4">
+                <source src="assets/batman-rag-demo.mov" type="video/quicktime">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div class="voxel-media-caption" style="background: #111115; color: #a1a1aa; border-top: 1px solid #222226;">
+              <span>● Interactive Gradio Interface</span>
+              <span>Azure OpenAI + Cosmos DB</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Content, Description & Architecture Highlights -->
+          <div class="voxel-content-col">
+            <div class="voxel-badge-row">
+              <span class="voxel-badge batman-badge-gold">🦇 Azure OpenAI</span>
+              <span class="voxel-badge">⚡ Cosmos DB Vector Search</span>
+              <span class="voxel-badge">🐳 Docker</span>
+              <span class="voxel-badge voxel-badge-py">🐍 Python & Gradio</span>
+            </div>
+
+            <h3 class="voxel-title">Batman Wiki RAG AI Assistant</h3>
+
+            <div class="voxel-desc">
+              <p>
+                This intelligent chatbot was built by expanding upon Microsoft's RAG tutorial architecture and adapting it to query deep comic and cinema lore. Knowledge was extracted and structured by scraping the 
+                <a href="https://batman.fandom.com/wiki/Batman_Wiki" target="_blank" rel="noopener noreferrer" style="color: var(--accent-blue); font-weight: 600; text-decoration: underline;">Batman Fandom Wiki</a>.
+              </p>
+              <p>
+                The vector database (Azure Cosmos DB with vector indexing) and AI models (Azure OpenAI text embeddings and GPT chat completions) are fully hosted and scaled on <strong>Microsoft Azure</strong>. The full chatbot service and Gradio web interface run locally inside a lightweight, reproducible <strong>Docker</strong> container.
+              </p>
+            </div>
+
+            <!-- Knowledge Base Callout -->
+            <div class="batman-source-callout">
+              <div class="batman-source-icon">🦇</div>
+              <div class="batman-source-content">
+                <strong>Knowledge Base & Live Context:</strong>
+                <br>
+                Scraped Batman lore from the <a href="https://batman.fandom.com/wiki/Batman_Wiki" target="_blank" rel="noopener noreferrer" class="batman-source-link">Batman Fandom Wiki ↗</a>, chunked and embedded into Azure Cosmos DB for instant semantic similarity retrieval.
+              </div>
+            </div>
+
+            <!-- Technical Highlights Grid -->
+            <div class="voxel-highlights-grid">
+              <div class="voxel-highlight-card">
+                <span class="voxel-highlight-label">Vector Database</span>
+                <span class="voxel-highlight-val">Azure Cosmos DB</span>
+              </div>
+              <div class="voxel-highlight-card">
+                <span class="voxel-highlight-label">AI & Embeddings</span>
+                <span class="voxel-highlight-val">Azure OpenAI Service</span>
+              </div>
+              <div class="voxel-highlight-card">
+                <span class="voxel-highlight-label">Execution Environment</span>
+                <span class="voxel-highlight-val">Docker & Docker Compose</span>
+              </div>
+              <div class="voxel-highlight-card">
+                <span class="voxel-highlight-label">Web UI Framework</span>
+                <span class="voxel-highlight-val">Python Gradio Interface</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="voxel-actions">
+              <a href="https://github.com/cRodriguez6/Batman-Rag-Model" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="batman-github-btn">
+                <span>Batman RAG Repo</span> ↗
+              </a>
+              <a href="https://github.com/cRodriguez6/Microsoft-Rag-Model-Tutorial" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="microsoft-rag-btn">
+                <span>Base RAG Tutorial</span> ↗
+              </a>
+              <a href="https://batman.fandom.com/wiki/Batman_Wiki" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="batman-wiki-btn">
+                <span>Batman Wiki</span> ↗
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <!-- Software Engineering & GitHub Repos Section -->
     <section class="section" id="software">
       <div class="container">
@@ -520,6 +627,56 @@
         </header>
 
         <div class="repos-grid">
+
+          <!-- Repo: Batman-Rag-Model -->
+          <article class="repo-card">
+            <div class="repo-card-top">
+              <span class="repo-folder-icon">🦇</span>
+              <div class="repo-links-icons">
+                <a href="https://github.com/cRodriguez6/Batman-Rag-Model" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="View Source on GitHub">↗</a>
+              </div>
+            </div>
+            <h3 class="repo-card-title">
+              <a href="https://github.com/cRodriguez6/Batman-Rag-Model" target="_blank" rel="noopener noreferrer">
+                Batman-Rag-Model
+              </a>
+            </h3>
+            <p class="repo-card-desc">
+              Custom RAG model designed to answer queries over the Batman Fandom Wiki. Powered by Azure Cosmos DB vector search and Azure OpenAI, executed locally via Docker.
+            </p>
+            <div class="repo-meta">
+              <span class="repo-lang">
+                <span class="lang-color-dot lang-python"></span>
+                Python / Azure / Docker
+              </span>
+              <a href="#batman-rag" style="font-size: 0.78rem; color: var(--accent-blue); text-decoration: none; font-weight: 600;">Showcase ↓</a>
+            </div>
+          </article>
+
+          <!-- Repo: Microsoft-Rag-Model-Tutorial -->
+          <article class="repo-card">
+            <div class="repo-card-top">
+              <span class="repo-folder-icon">☁️</span>
+              <div class="repo-links-icons">
+                <a href="https://github.com/cRodriguez6/Microsoft-Rag-Model-Tutorial" target="_blank" rel="noopener noreferrer" class="repo-icon-link" title="View Source on GitHub">↗</a>
+              </div>
+            </div>
+            <h3 class="repo-card-title">
+              <a href="https://github.com/cRodriguez6/Microsoft-Rag-Model-Tutorial" target="_blank" rel="noopener noreferrer">
+                Microsoft-Rag-Model-Tutorial
+              </a>
+            </h3>
+            <p class="repo-card-desc">
+              Foundational Retrieval-Augmented Generation implementation based on Microsoft's cloud architecture. Demonstrates vector indexing, semantic search, and prompt engineering with Azure Cosmos DB and OpenAI.
+            </p>
+            <div class="repo-meta">
+              <span class="repo-lang">
+                <span class="lang-color-dot lang-python"></span>
+                Python / Azure
+              </span>
+              <span>Base RAG</span>
+            </div>
+          </article>
 
           <!-- Repo: Voxel-Engine -->
           <article class="repo-card">
@@ -874,6 +1031,7 @@
       <div class="footer-links">
         <a href="#hero" class="footer-link">Back to Top</a>
         <a href="#voxel-engine" class="footer-link">Voxel Engine</a>
+        <a href="#batman-rag" class="footer-link">Batman RAG</a>
         <a href="https://github.com/cRodriguez6" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub (cRodriguez6)</a>
         <a href="https://cjr1400.itch.io" target="_blank" rel="noopener noreferrer" class="footer-link">Itch.io (CJR1400)</a>
       </div>
