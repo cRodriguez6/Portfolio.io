@@ -80,8 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  // Headshot Management (Photo Upload / Drop / Replace)
-  initHeadshotManager();
 
   // Itch Game Embed Quick Preview Modal
   initGamePreviewModal();
@@ -90,120 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
 });
 
-/**
- * Headshot Photo Manager
- * Allows Connor to easily preview, drop in, or update his headshot picture!
- */
-function initHeadshotManager() {
-  const headshotFrame = document.getElementById('headshot-frame');
-  const headshotModal = document.getElementById('headshot-modal');
-  const closeHeadshotModal = document.getElementById('close-headshot-modal');
-  const headshotImg = document.getElementById('headshot-img');
-  const fileInput = document.getElementById('headshot-file-input');
-  const dropZone = document.getElementById('headshot-drop-zone');
-  const resetBtn = document.getElementById('reset-headshot-btn');
 
-  const DEFAULT_AVATAR = 'assets/headshot.jpg';
-
-  // Check saved headshot from LocalStorage
-  const savedHeadshot = localStorage.getItem('cRodriguez_headshot');
-  if (savedHeadshot && headshotImg) {
-    headshotImg.src = savedHeadshot;
-  }
-
-  if (headshotFrame && headshotModal) {
-    headshotFrame.addEventListener('click', () => {
-      headshotModal.classList.add('active');
-    });
-  }
-
-  if (closeHeadshotModal && headshotModal) {
-    closeHeadshotModal.addEventListener('click', () => {
-      headshotModal.classList.remove('active');
-    });
-  }
-
-  // Clicking outside modal to close
-  window.addEventListener('click', (e) => {
-    if (e.target === headshotModal) {
-      headshotModal.classList.remove('active');
-    }
-  });
-
-  // Handle File Input
-  function handleImageFile(file) {
-    if (!file || !file.type.startsWith('image/')) {
-      alert('Please select a valid image file (PNG, JPG, WEBP).');
-      return;
-    }
-
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      const dataUrl = e.target.result;
-      if (headshotImg) {
-        headshotImg.src = dataUrl;
-      }
-      try {
-        localStorage.setItem('cRodriguez_headshot', dataUrl);
-      } catch (err) {
-        console.warn('Image too large for localStorage, previewing session only.');
-      }
-      if (headshotModal) {
-        headshotModal.classList.remove('active');
-      }
-      showToast('Headshot updated successfully!');
-    };
-    reader.readAsDataURL(file);
-  }
-
-  if (dropZone && fileInput) {
-    dropZone.addEventListener('click', () => {
-      fileInput.click();
-    });
-
-    fileInput.addEventListener('change', (e) => {
-      if (e.target.files && e.target.files[0]) {
-        handleImageFile(e.target.files[0]);
-      }
-    });
-
-    // Drag and Drop
-    ['dragenter', 'dragover'].forEach((eventName) => {
-      dropZone.addEventListener(eventName, (e) => {
-        e.preventDefault();
-        dropZone.classList.add('dragover');
-      });
-    });
-
-    ['dragleave', 'drop'].forEach((eventName) => {
-      dropZone.addEventListener(eventName, (e) => {
-        e.preventDefault();
-        dropZone.classList.remove('dragover');
-      });
-    });
-
-    dropZone.addEventListener('drop', (e) => {
-      e.preventDefault();
-      if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-        handleImageFile(e.dataTransfer.files[0]);
-      }
-    });
-  }
-
-  // Reset to default headshot
-  if (resetBtn) {
-    resetBtn.addEventListener('click', () => {
-      localStorage.removeItem('cRodriguez_headshot');
-      if (headshotImg) {
-        headshotImg.src = DEFAULT_AVATAR;
-      }
-      if (headshotModal) {
-        headshotModal.classList.remove('active');
-      }
-      showToast('Reset to default headshot.');
-    });
-  }
-}
 
 /**
  * Itch Game Quick Preview Lightbox
